@@ -1,13 +1,7 @@
 function isPangram(string) {
   return (
-    [
-      ...new Set(
-        string
-          .replace(/[\W\d]/g, "")
-          .toLowerCase()
-          .match(/[a-z]/g)
-      ),
-    ].length === 26
+    [...new Set(string.replace(/[\W\d]/g, "").toLowerCase().match(/[a-z]/g)),]
+    .length === 26
   );
 }
 
